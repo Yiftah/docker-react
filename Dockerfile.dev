@@ -1,0 +1,12 @@
+FROM node:alpine
+
+WORKDIR '/app'
+
+COPY package.json .
+RUN npm install
+
+#Is this necessary if we use compose to mount files?
+#Useful as a reference for future changes...
+COPY . .
+
+CMD ["npm", "run", "start"]
