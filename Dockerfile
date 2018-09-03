@@ -12,6 +12,7 @@ RUN npm run build
 
 #Runtime - copy only the build artifacts from the previous step
 FROM nginx
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
 
 
