@@ -10,3 +10,11 @@ script:
 #deploy:
 #    provider: elasticbeanstalk
 #    region:
+#   app: "docker"
+#   env: "Docker-env"
+#   bucket-name:
+#   bucket-path:
+#on:
+#    branch: master
+#   access_key_id: $AWS_ACCESS_KET
+#secret_access_key:
